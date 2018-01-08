@@ -1,0 +1,61 @@
+"#settingsButton": {
+	backgroundColor: "#182b39"
+}
+".outerSettingView": {
+	backgroundColor: "#ffffff",
+	height: "220dp",
+	width: "80%",
+	borderRadius: "10dp",
+	top: "20dp"
+}
+
+".iconView": {
+	top: "12dp",
+	width: "15dp",
+	height: "15dp",
+	rotation: "180",
+	left: "48%"
+}
+
+".icon": {
+
+}
+"#firstSettingView": {
+	top: "20dp"
+}
+".settingView": {
+	top: "15dp",
+	height: "40dp",
+	width: "80%",
+	borderColor: "#59ccca",
+	borderRadius: "2dp"
+}
+
+".settingText": {
+	top: "14dp",
+	left: "8dp",
+	color: "#182b39",
+	font: {
+		fontSize: "10dp"
+	}
+}
+"#soundIcon": {
+	width: "75%",
+	height: "40dp"
+}
+"#pushIcon": {
+	width: "58%"
+}
+"#sound": {
+	width: "120dp",
+	value: "50",
+	right: 0,
+	backgroundColor: "#eeeeee",
+	top: "10dp"
+}
+
+"#push": {
+	top: "6dp",
+	right: 0,
+	value: true
+}

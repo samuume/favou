@@ -1,0 +1,19 @@
+"#table": {
+	color: "white",
+	backgroundColor: "black",
+	height: "100dp"
+}
+
+"#discoverButton": {
+	backgroundColor: "#182b39"
+}
+'.canvas': {
+	height: "284dp",
+	// Use vertical layout so the Map comes below the SearchBar, no matter its height
+	layout: 'vertical'
+}
+"#map": {
+	width: "100%",
+	height: "284dp",
+	backgroundColor: "white"
+}

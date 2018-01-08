@@ -1,0 +1,62 @@
+"#taskTitle": {
+	
+}
+
+"#taskDate": {
+	
+}
+
+"#taskDescImageView": {
+	height: Titanium.UI.SIZE,
+	top: "5dp"
+}
+
+"#taskDescImage": {
+	borderRadius: "50dp"
+}
+
+"#chatButton": {
+	top: "10dp",
+	width: "120dp"
+}
+
+"TableView": {
+	left: "20dp",
+	separatorStyle: Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE,
+	width: "80%",
+	top: "20dp",
+	height: Titanium.UI.SIZE
+	
+}
+
+".marginLeft": {
+	left: "10dp"
+}
+
+"#participants": {
+	top: "20dp",
+	font: {
+		fontSize: "20dp"
+	}
+}
+
+".participantsImageView": {
+	top: "20dp",
+	height: "100dp"
+}
+
+".participantImageView":{
+	width: "30%",
+	right: "1.5%",
+	left: "1.5%"
+}
+
+".participantImage": {
+	borderRadius: "50dp"
+}
+
+".participantName": {
+	font: {
+		fontSize: "12dp"
+	}
+}

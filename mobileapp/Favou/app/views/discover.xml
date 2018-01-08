@@ -1,0 +1,70 @@
+<Alloy>
+	<Window id="discover" class="container" onOpen="showCurrentPosition">
+		<View class="innerContainer" layout="vertical">
+			<View id="topBar" layout="horizontal">
+				<View class="topButton">
+					<ImageView image="/images/icons/backward-arrow.png" id="backButton"></ImageView>
+				</View>
+				<Label id="pageHeader" text="Opdag"></Label>
+				<View class="topButton" onClick="addTaskButton">
+					<ImageView image="/images/icons/add-symbol.png" id="addTaskButton"></ImageView>
+				</View>
+			</View>
+			<View class="canvas">
+				
+				<!--
+					The module-tag is very powerful. It translates to `require('ti.map').create<Tag|method>`
+					allowing you to provide your own UI factory methodes in a native or CommonJS module. In this case
+					the view is delivered by the `ti.map` add-on module.
+				-->
+				<View module="ti.map" id="map" onLongclick="reverseGeocode">
+	
+					<!-- Maps can contain child views as overlays -->
+					<!-- <Button class="typeBtn" onClick="changeMapType">Map Type</Button> -->
+	
+				</View>
+			</View>
+			<ScrollView id="mainContent" layout="vertical">
+				<View id="info" layout="vertical" dataCollection="tasks" dataTransform="dataTransform">
+					<View class="infoBox" layout="horizontal" modelId="{id}" onClick="taskClicked">
+						<View class="infoBoxContainer" width="100%">
+							<View class="taskImage">
+								<ImageView image="{image}" class="portrait" ></ImageView>
+							</View>
+			                <View class="taskInfo" layout="vertical">
+			                    <Label class="postName">{name}</Label>
+			                    <View layout="horizontal">
+			                        <Label class="taskDesc">{title}</Label>
+			                    </View>
+			                </View>
+			                <View class="taskNext" layout="vertical">
+			                    <View class="taskNextView">
+			                    	<ImageView class="taskNextImage" image="/images/icons/backward-arrow.png"></ImageView>
+			                    </View>
+			                    <Label class="taskDate">{date}</Label>
+			                </View>
+			            </View>       
+		            </View>
+				</View>
+			</ScrollView>
+		</View>
+		<View layout="horizontal" id="nav">
+			<View class="navButton" id="discoverButton" onClick="discoverButton">
+				<ImageView image="/images/icons/earth-globe-light.png" class="navButtonImage active"></ImageView>
+				<Label class="navText active">Opdag</Label>
+			</View>
+			<View class="navButton" id="tasksButton" onClick="tasksButton">
+				<ImageView image="/images/icons/completed-tasks-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Tilmeldte Opgaver</Label>
+			</View>
+			<View class="navButton" id="profileButton" onClick="profileButton">
+				<ImageView image="/images/icons/profile-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Profil</Label>
+			</View>
+			<View class="navButton" id="settingsButton" onClick="settingsButton">
+				<ImageView image="/images/icons/settings-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Indstillinger</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

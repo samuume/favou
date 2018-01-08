@@ -1,0 +1,94 @@
+<Alloy>
+	<Window class="container" id="task">
+		<View class="innerContainer" layout="vertical">
+			<View id="topBar" layout="horizontal">
+				<View class="topButton">
+					<ImageView imageHidden="/images/icons/backward-arrow.png" id="backButton"></ImageView>
+				</View>
+				<Label id="pageHeader" text="Tilmeldte Opgaver"></Label>
+				<View class="topButton">
+					<ImageView imageHidden="/images/icons/add-symbol.png" id="addTaskButton"></ImageView>
+				</View>
+			</View>
+			<ScrollView id="taskView" layout="vertical">
+				<View class="info" layout="vertical">
+					<View class="infoBox" layout="horizontal">
+						<View class="infoBoxContainer" width="100%">
+							<View class="taskImage">
+								<ImageView image="http://lorempicsum.com/futurama/200/200/1" class="portrait" ></ImageView>
+							</View>
+			                <View class="taskInfo" layout="vertical">
+			                    <Label class="postName">Martin Ingeman</Label>
+			                    <View layout="horizontal">
+			                        <Label class="taskDesc">Hjælp til flytning</Label>
+			                    </View>
+			                </View>
+			                <View class="taskNext" layout="vertical">
+			                    <View class="taskNextView">
+			                    	<ImageView class="taskNextImage" image="/images/icons/backward-arrow.png"></ImageView>
+			                    </View>
+			                    <Label class="taskDate">d.22.01.17</Label>
+			                </View>
+			            </View>       
+		            </View>
+		            <View class="infoBox" layout="horizontal">
+						<View class="infoBoxContainer" width="100%">
+							<View class="taskImage">
+								<ImageView image="http://lorempicsum.com/futurama/200/200/2" class="portrait" ></ImageView>
+							</View>
+			                <View class="taskInfo" layout="vertical">
+			                    <Label class="postName">Sarah Hansen</Label>
+			                    <View layout="horizontal">
+			                        <Label class="taskDesc">Arrangement ved åen</Label>
+			                    </View>
+			                </View>
+			                <View class="taskNext" layout="vertical">
+			                    <View class="taskNextView">
+			                    	<ImageView class="taskNextImage" image="/images/icons/backward-arrow.png"></ImageView>
+			                    </View>
+			                    <Label class="taskDate">d.22.01.17</Label>
+			                </View>
+			            </View>       
+		            </View>
+		            <View class="infoBox" layout="horizontal">
+						<View class="infoBoxContainer" width="100%">
+							<View class="taskImage">
+								<ImageView image="http://lorempicsum.com/futurama/200/200/3" class="portrait" ></ImageView>
+							</View>
+			                <View class="taskInfo" layout="vertical">
+			                    <Label class="postName">Louise Jensen</Label>
+			                    <View layout="horizontal">
+			                        <Label class="taskDesc">Mangler 2 personer, hjæææææælp</Label>
+			                    </View>
+			                </View>
+			                <View class="taskNext" layout="vertical">
+			                    <View class="taskNextView">
+			                    	<ImageView class="taskNextImage" image="/images/icons/backward-arrow.png"></ImageView>
+			                    </View>
+			                    <Label class="taskDate">d.22.01.17</Label>
+			                </View>
+			            </View>       
+		            </View>
+				</View>
+			</ScrollView>
+		</View>
+		<View layout="horizontal" id="nav">
+			<View class="navButton" id="discoverButton" onClick="discoverButton">
+				<ImageView image="/images/icons/earth-globe-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Opdag</Label>
+			</View>
+			<View class="navButton" id="tasksButton" onClick="tasksButton">
+				<ImageView image="/images/icons/completed-tasks-light.png" class="navButtonImage active"></ImageView>
+				<Label class="navText active">Tilmeldte Opgaver</Label>
+			</View>
+			<View class="navButton" id="profileButton" onClick="profileButton">
+				<ImageView image="/images/icons/profile-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Profil</Label>
+			</View>
+			<View class="navButton" id="settingsButton" onClick="settingsButton">
+				<ImageView image="/images/icons/settings-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Indstillinger</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

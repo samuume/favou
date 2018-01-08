@@ -1,0 +1,168 @@
+".container": {
+	backgroundColor:"#182b39"
+}
+
+"#topBar": {
+	height: "50dp",
+	width: "100%"
+}
+
+".topButton": {
+	height: "20dp",
+	width: "15%",
+	top: "15dp",
+	bottom: "15dp"
+}
+
+"#pageHeader": {
+	height: "50dp",
+	font: {
+		fontFamily: "lobster_1_4",
+		fontSize: "18dp" 
+	},
+	color: "#49ccca",
+	width: "70%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+"#backButton": {
+	
+}
+
+"#addTaskButton": {
+	
+}
+
+"#mainContent": {
+
+}
+
+".innerContainer": {
+	bottom: "66dp"
+}
+
+"#nav": {
+	width: Ti.UI.FILL,
+	height: "66dp",
+	left: 0,
+	bottom: 0,
+	borderColor: "#cccccc",
+	borderWidth: "0.5dp"
+}
+
+".navText": {
+	color: "#182b39",
+	font: {
+		fontSize: "8dp"
+	},
+	top: "8.25dp"
+}
+
+".navButtonImage": {
+	height: "33dp",
+	top: "8.25dp"
+}
+
+".navButton": {
+	height: "66dp",
+	backgroundColor: "white",
+	color: "#182b39",
+	width: "25%",
+	borderColor: "#cccccc",
+	borderWidth: "0.5dp",
+	font: {
+		fontSize: "8dp"
+	},
+	layout: "vertical"
+}
+
+".active": {
+	color: "white"
+}
+
+".infoBox" : {
+    width: "100%",
+    height: "60dp",
+    borderColor: "#59d3ca",
+    borderWidth: "0.5dp"
+}
+
+".infoBoxContainer": {
+	width: "98%",
+	left: "1%",
+	top: "0dp",
+	layout: "horizontal"
+}
+
+".portrait" : {
+    height: "45dp",
+    borderRadius: "22.5dp",
+    backgroundColor: "white",
+}
+
+".taskImage": {
+	width: "15%"
+}
+
+".taskInfo": {
+	width: "55%",
+	top: "10dp",
+	left: "10dp"
+}
+
+".postName" : {
+    left: 0,
+    color: "#59d3ca"
+}
+".taskDesc" : {
+	height: "22.5dp",
+    color: "#ffffff",
+    font: {
+        fontSize: 11
+    }
+}
+
+".taskNext": {
+	width: "20%",
+	top: "10dp"
+}
+
+".taskNextView": {
+	height: "22.5dp",
+	right: 0
+}
+
+".taskNextImage": {
+	rotation: "180",
+	height: "10dp",
+	right: 0
+}
+
+".taskDate" : {
+    font: {
+        fontSize: 11
+    },
+    right: "10dp"
+}
+
+".info": {
+	
+}
+
+".btn": {
+	height: "30dp",
+	borderRadius: "4dp",
+	backgroundColor: "#49ccca"
+}
+
+".teal": {
+	color: "#56cdc4"
+}
+
+".white": {
+	color: "#ffffff"
+}
+
+".checkbox": {
+	style: Titanium.UI.Android.SWITCH_STYLE_CHECKBOX
+}

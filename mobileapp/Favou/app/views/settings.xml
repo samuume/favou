@@ -1,0 +1,55 @@
+<Alloy>
+	<Window class="container" id="settings">
+		<View class="innerContainer" layout="vertical">
+			<View id="topBar" layout="horizontal">
+				<View class="topButton">
+					<ImageView imageHidden="/images/icons/backward-arrow.png" id="backButton"></ImageView>
+				</View>
+				<Label id="pageHeader" text="Indstillinger"></Label>
+				<View class="topButton">
+					<ImageView imageHidden="/images/icons/add-symbol.png" id="addTaskButton"></ImageView>
+				</View>
+			</View>
+			<ScrollView layout="vertical">
+				<View class="outerSettingView" layout="vertical">
+					<View class="settingView" id="firstSettingView" layout="horizontal">
+						<Label class="settingText">Lydstyrke</Label>
+						<View id="soundIcon">
+							<Slider class="alignment" id="sound"></Slider>
+						</View>						
+					</View>
+					<View class="settingView" layout="horizontal">
+						<Label class="settingText">Push notifikationer</Label>
+						<View id="pushIcon">
+							<Switch id="push"></Switch>
+						</View>
+					</View>
+					<View class="settingView" layout="horizontal">
+						<Label class="settingText" text="Vilkår og betingelser"></Label>
+						<View class="iconView">
+							<ImageView class="icon" image="/images/icons/backward-arrow.png"></ImageView>
+						</View>
+					</View>
+				</View>
+			</ScrollView>
+		</View>
+		<View layout="horizontal" id="nav">
+			<View class="navButton" id="discoverButton" onClick="discoverButton">
+				<ImageView image="/images/icons/earth-globe-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Opdag</Label>
+			</View>
+			<View class="navButton" id="tasksButton" onClick="tasksButton">
+				<ImageView image="/images/icons/completed-tasks-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Tilmeldte Opgaver</Label>
+			</View>
+			<View class="navButton" id="profileButton" onClick="profileButton">
+				<ImageView image="/images/icons/profile-dark.png" class="navButtonImage"></ImageView>
+				<Label class="navText">Profil</Label>
+			</View>
+			<View class="navButton" id="settingsButton" onClick="settingsButton">
+				<ImageView image="/images/icons/settings-light.png" class="navButtonImage active"></ImageView>
+				<Label class="navText active">Indstillinger</Label>
+			</View>
+		</View>
+	</Window>
+</Alloy>

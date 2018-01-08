@@ -1,0 +1,58 @@
+"#profileButton": {
+	backgroundColor: "#182b39"
+}
+
+"#profileView": {
+	height: "140dp"
+}
+
+"#profileImageView": {
+	width: "50%"
+}
+
+"#profileImage": {
+	borderRadius: "75dp",
+	width: "150dp",
+	height: "150dp"
+}
+
+"#profileDescView": {
+	width: "30%",
+	right: "30dp",
+}
+
+"#name": {
+	top:"10dp",
+	width: "100%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+
+"#age": {
+	top:"10dp",
+	width: "100%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+
+"#city": {
+	top:"10dp",
+	width: "100%",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+
+"#interest": {
+	font: {
+		fontSize: "20dp"
+	}
+}
+
+".checkboxView": {
+	top: "20dp",
+	width: "33.3%"
+}
+
+".checkbox": {
+	left: 0,
+	font: {
+		fontSize: "12dp"
+	}
+}

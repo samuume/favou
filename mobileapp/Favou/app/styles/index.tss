@@ -1,0 +1,17 @@
+"#logo": {
+	width: "70%",
+	top: "80dp",
+}
+
+"#login": {
+	top: "70dp",
+}
+
+"#tos": {
+	top: "25dp",
+	width: "66%",
+}
+"Label": {
+	color: "#59d3ca",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+}

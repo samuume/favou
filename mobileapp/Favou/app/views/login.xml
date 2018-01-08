@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="loginWin" class="container">
+		<View layout="vertical">
+			<ImageView id="logo" image="/images/logo.png"></ImageView>
+			<View layout="vertical">
+				<LoginButton id="fbLogin" title="Login" ns="Alloy.Globals.Facebook"/>
+				<!-- <Button id="loginButton" title="Login"></Button> -->
+				<View layout="vertical" id="tos">
+					<Label>Velkommen til Favou.</Label>
+					<Label>Ved at logge ind med Facebook, giver du samtidig din samtykke til at vi kan hente dine profiloplysninger. Vi poster aldrig noget på dine vegne.</Label>
+				</View>
+			</View>
+			<!-- <ListView>
+				<ListSection dataCollection="users" dataTransform="dataTransform">
+					<ListItem title="{name}" modelId="{id}" >
+						
+					</ListItem>
+				</ListSection>
+			</ListView> -->
+		</View>
+	</Window>
+</Alloy>
